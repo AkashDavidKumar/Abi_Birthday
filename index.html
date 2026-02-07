@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday Surprise!</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="stars"></div>
+  <div class="balloons" id="balloons"></div>
+  <div class="confetti" id="confetti"></div>
+
+  <div class="container">
+    <section class="hero">
+      <marquee>
+        <h1 class="title">Happy Birthday! ✨🎉</h1>
+      </marquee>
+      <p>
+        <span class="typewriter" id="typewriter"></span>
+      </p>
+
+      <div class="controls">
+        <button class="btn" id="startBtn">Start the surprise</button>
+        <button class="btn secondary" id="confettiBtn">Confetti burst</button>
+      </div>
+
+      <!-- Audio (replace src with your track) -->
+      <audio id="music" preload="auto" src="./assets/audio/abishek.mp3"></audio>
+    </section>
+
+    <!-- Slideshow -->
+    <section class="card">
+      <h2 style="margin:6px 6px 12px">Memories slideshow</h2>
+
+      <div class="slideshow" id="slideshow">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <img src="./assets/images/image_ (1).jpeg" alt="Birthday cake with candles">
+          <div class="caption">Make a wish… and let the night glow.</div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="./assets/images/image_ (2).jpeg" alt="Friends cheering">
+          <div class="caption">Surrounded by love, laughter, and little sparks of magic.</div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="./assets/images/image_ (3).jpeg" alt="Lights and confetti">
+          <div class="caption">Tonight is yours — let it shimmer.</div>
+        </div>
+
+        <div class="nav">
+          <button id="prev" aria-label="Previous slide">‹</button>
+          <button id="next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="card">
+      <h2 style="margin:6px 6px 12px">A little video message</h2>
+
+      <div class="video-wrap">
+        <!-- Replace src with your video -->
+        <video id="video" src="./assets/video/birthday_video.mp4"
+          poster="https://images.unsplash.com/photo-1513151233099-48c8e0b17a78?q=80&w=1600&auto=format&fit=crop"
+          controls></video>
+        <div class="video-mask"></div>
+      </div>
+    </section>
+
+    <!-- Picture + message tiles -->
+    <section class="card">
+      <h2 style="margin:6px 6px 12px">Little notes & sparks</h2>
+
+      <div class="grid-container">
+        <div class="tile">
+          <img src="./assets/images/image_ (4).jpeg" alt="Glow image">
+          <div class="tile-info">
+            <h3>Glow</h3>
+            <p>May every step ahead feel lit from within.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <img src="./assets/images/image_ (5).jpeg" alt="Spark image">
+          <div class="tile-info">
+            <h3>Spark</h3>
+            <p>Here’s to ideas that dance and hearts that follow.</p>
+          </div>
+        </div>
+        <div class="tile">
+          <img src="./assets/images/image_ (6).jpeg" alt="Shine image">
+          <div class="tile-info">
+            <h3>Shine</h3>
+            <p>You don’t just enter rooms — you brighten them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
